@@ -1,0 +1,155 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Modified by : Steven Grasso
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}      
+      \textit{\small#1} & \textit{\small #2} \\      
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/TheIronGiant6306/}{\Large Steven Grasso}} & Email : \href{mailto:sgrasso1482@gmail.com}{sgrasso1482@gmail.com}\\
+  \href{https://github.com/TheIronGiant6306/}{https://github.com/TheIronGiant6306} & Mobile : +1-860-817-6306 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Connecticut}{Storrs, CT}
+      {Bachelor of Science in Engineering in Computer Science \& Engineering; Mathematics Minor}{Jan. 2012 -- Dec. 2015}
+    \resumeSubheading
+      {University of Connecticut}{Storrs, CT}
+      {Bachelor of Music in Performance}{Aug. 2007 -- Dec. 2012}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cigna}{Bloomfield, CT}
+      {TECDP Specialist - Software Engineering \& Innovations Team}{Jul. 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{Global Fitness Challenge}
+          {The Global Fitness Challenge is a webapp designed to motivate users to achieve fitness goals through team participation, customizable goals, and achievements. Was responsible for working on every part of the application, including Angular5 single page application, Springboot main application and associated microservices, MySql database, and Gitlab enabled CI/CD. Application is deployed to Amazon Web Services.}
+        \resumeItem{Virtual Relaxation Pod}
+          {The Virtual Relaxation Pod is a product designed to allow users to experience guided meditation in a virtual reality environment, while collecting biometric and qualitative user data. The project consists of a web based user interface written in AngularJS, a Unity3d VR application, and a service platform written in Groovy using the SpringBoot framework. Was responsible for complete design and implementation of the service platform and all subsystems, including APIs, security, system logic, and MySql schema. Wrote client libraries for the VR application and web UI to facilitate interactions with the service platform.}
+      \resumeItemListEnd      
+      
+    \resumeSubSubheading
+      {TECDP Analyst - Software Engineering \& Innovations Team}{Jan. 2016 - Jul. 2017}
+      \resumeItemListStart
+        \resumeItem{Brainwave Data Visualization \& Analysis}
+          {Implemented OSC data ingestion service in C\# to expose streaming realtime brainwave data from MUSE headband in Unity3d game engine. Developed several interactive visual brainwave controlled simulations, most notably controlling weather through meditation. Built simple neural network classifier to distinguish neutral and meditative brain state. Collected data from test subjects in SQL database and produced data visualization using R, featured in The International Journal of Health \& Productivity }
+      \resumeItemListEnd  
+      
+    \resumeSubSubheading
+      {TECDP Intern - Software Engineering \& Innovations Team}{May 2015 - Dec. 2015}
+      \resumeItemListStart
+        \resumeItem{Innovation in a Box}
+          {Created Python tool to enable creation of offline web demos from live Cigna web pages.}
+        \resumeItem{Space Ride}
+          {Created 3d solar system simulation as a proof of concept to demonstrate the capability of custom physics simulations in the Unity3d game engine. Implemented universal gravitation simulation in C\# (Mono).}
+      \resumeItemListEnd        
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Genetic Learning Sandbox}
+      {Unity3d application that allows hyperparameter experimentation on genetically trained neural networks to solve control problems. Designed to be deployed to mobile devices and includes visual physics simulation.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
